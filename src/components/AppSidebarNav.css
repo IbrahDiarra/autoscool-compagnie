@@ -1,0 +1,14 @@
+.AppSidebarNav-customNavLink {
+  transition: background-color 0.3s;
+  color: black; /* Couleur par défaut du texte */
+  font-family: Arial, sans-serif; /* Changer la police */
+  font-size: 16px; /* Changer la taille de la police */
+  padding: 10px; /* Ajoute du padding si nécessaire */
+  border-left: 4px solid transparent; /* Bordure gauche par défaut */
+}
+
+.AppSidebarNav-customNavLink.active {
+  background-color: rgba(110, 108, 108, 0.2); /* Couleur de fond lorsqu'il est actif */
+  color: white; /* Couleur du texte lorsqu'il est actif */
+  border-left: 4px solid #c7d6f5; /* Bordure gauche lorsqu'il est actif */
+}

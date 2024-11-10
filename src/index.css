@@ -1,0 +1,6 @@
+html{
+  font-size: 85%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 8.5rem;
+}
