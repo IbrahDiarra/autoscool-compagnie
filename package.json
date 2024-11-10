@@ -2,7 +2,7 @@
   "name": "@coreui/coreui-free-react-admin-template",
   "version": "5.2.0",
   "description": "CoreUI Free React Admin Template",
-  "homepage": "https://IbrahDiarra.github.io/autoscool-compagnie.git",
+  "homepage": "https://IbrahDiarra.github.io/autoscool-compagnie",
   "scripts": {
     "build": "vite build",
     "lint": "eslint \"src/**/*.js\"",
