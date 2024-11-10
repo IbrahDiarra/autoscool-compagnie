@@ -2,12 +2,14 @@
   "name": "@coreui/coreui-free-react-admin-template",
   "version": "5.2.0",
   "description": "CoreUI Free React Admin Template",
-  "homepage": ".",
+  "homepage": "https://IbrahDiarra.github.io/autoscool-compagnie.git",
   "scripts": {
     "build": "vite build",
     "lint": "eslint \"src/**/*.js\"",
     "serve": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@coreui/chartjs": "^4.0.0",
@@ -44,6 +46,7 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.36.1",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
     "prettier": "3.3.3",
     "sass": "^1.80.4",
