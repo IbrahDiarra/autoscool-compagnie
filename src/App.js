@@ -23,10 +23,10 @@ const App = () => {
   const storedTheme = useSelector((state) => state.theme)
 
   useEffect(() => {
-    if (!isColorModeSet() || storedTheme !== 'light') {
-      setColorMode('light') // Applique le mode clair si ce n'est pas encore défini
-    }
-  }, [isColorModeSet, storedTheme, setColorMode])
+    localStorage.removeItem('theme') // Supprime toute valeur de thème enregistrée
+    setColorMode('light')
+  }, [])
+
   // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
