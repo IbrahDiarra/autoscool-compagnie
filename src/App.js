@@ -23,14 +23,11 @@ const App = () => {
   const storedTheme = useSelector((state) => state.theme)
 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.href.split('?')[1])
-    const theme = urlParams.get('theme') && urlParams.get('theme').match(/^[A-Za-z0-9\s]+/)[0]
-    if (theme) {
-      setColorMode(theme)
-    } else if (!isColorModeSet()) {
-      setColorMode('light') // Forcer le mode clair par défaut
+    if (!isColorModeSet() || storedTheme !== 'light') {
+      setColorMode('light') // Applique le mode clair si ce n'est pas encore défini
     }
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [isColorModeSet, storedTheme, setColorMode])
+  // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <HashRouter>

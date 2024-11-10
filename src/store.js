@@ -2,13 +2,17 @@ import { legacy_createStore as createStore } from 'redux'
 
 const initialState = {
   sidebarShow: true,
-  theme: 'light',
+  theme: localStorage.getItem('theme') || 'light', // Récupère le thème du localStorage
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {
   switch (type) {
     case 'set':
-      return { ...state, ...rest }
+      const newState = { ...state, ...rest }
+      if (rest.theme) {
+        localStorage.setItem('theme', rest.theme) // Enregistre le thème dans le localStorage
+      }
+      return newState
     default:
       return state
   }
