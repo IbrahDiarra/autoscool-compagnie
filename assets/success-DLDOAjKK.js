@@ -1,0 +1,1 @@
+var s=["301 201","<g fill='none'><path fill='#FFF' d='M.5.5h300v200H.5z'/><path fill='#F77F00' d='M.5.5h100v200H.5z'/><path fill='#009E60' d='M200.5.5h100v200h-100z'/></g>"];const l=""+new URL("success-B2xIqaxT.png",import.meta.url).href;export{s as c,l as s};
