@@ -50,19 +50,19 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Groupes',
-    to: '/theme/colors',
+    to: '/lesgroupes',
     icon: <CIcon icon={cilGroup} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Classement',
-    to: '/confirmation',
+    to: '/classement',
     icon: <CIcon icon={cilChartLine} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
     name: 'Avis candidat',
-    to: '/register',
+    to: '/avis',
     icon: <CIcon icon={cilCommentSquare} customClassName="nav-icon" />,
   },
   {

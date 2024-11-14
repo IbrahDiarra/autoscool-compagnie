@@ -14,10 +14,10 @@ const routes = [
   { path: '/dashboard', name: 'Acceuil', element: Dashboard },
   { path: '/portefeuille', name: 'Portefeuille', element: Portefeuille },
   { path: '/annonce', name: 'Annonce', element: Annonce },
-  { path: '/avis', name: 'Avis', element: Avis },
+  { path: '/avis', name: 'Avis Candidat', element: Avis },
   { path: '/lesCandidats', name: 'Les Candidats', element: LesCandidats },
   { path: '/classement', name: 'Classement', element: Classement },
-  { path: '/lesgroupes', name: 'LesGroupes', element: LesGroupes },
+  { path: '/lesgroupes', name: 'Les Groupes', element: LesGroupes },
   { path: '/compte', name: 'Compte', element: Compte },
 ]
 
