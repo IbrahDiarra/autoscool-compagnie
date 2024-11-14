@@ -29,7 +29,7 @@ const CardDetails = ({}) => {
             <CCardHeader
               className="text-center"
               style={{
-                backgroundColor: '#0077C0',
+                backgroundColor: 'var(--blue5)',
                 color: '#fff',
                 borderRadius: '0px',
                 borderBottomLeftRadius: '20px',

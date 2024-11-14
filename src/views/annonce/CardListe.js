@@ -23,7 +23,12 @@ const CardListe = ({ titre, details }) => {
           <CCard className="mb-4">
             <CCardHeader>
               <div className="d-flex justify-content-between text-nowrap">
-                <div className="fw-semibold">{titre}</div>
+                <div
+                  style={{ color: 'var(--grey)', fontSize: '11px', textTransform: 'uppercase' }}
+                  className="fw-semibold"
+                >
+                  {titre}
+                </div>
               </div>
             </CCardHeader>
             <CCardBody>

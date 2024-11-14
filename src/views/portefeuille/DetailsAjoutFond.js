@@ -31,7 +31,7 @@ const DetailsAjoutFond = ({ compagnie, date, montant, status, image }) => {
             <CCardHeader
               className="text-center pt-3 pb-3"
               style={{
-                backgroundColor: 'rgb(4, 161, 64)',
+                backgroundColor: 'var(--vert1)',
                 color: '#fff',
                 borderRadius: '0px',
                 borderBottomLeftRadius: '20px',

@@ -69,8 +69,11 @@ const ModalAjoutFond = () => {
   return (
     <>
       <CButton
-        color="primary"
-        style={{ border: '1px solid #fff' }}
+        style={{
+          border: '1px solid #fff',
+          color: '#fff',
+          backgroundColor: 'var(--btnajout)',
+        }}
         className="mt-5 mb-5"
         onClick={() => setVisible(!visible)}
       >

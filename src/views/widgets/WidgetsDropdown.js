@@ -36,7 +36,7 @@ const WidgetsDropdown = (props) => {
           className="my-widget"
           style={{
             backgroundColor: 'white',
-            borderTop: '4px solid #ec15bd',
+            borderTop: '4px solid var(--rose1)',
             paddingBottom: '16px',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
           }}
@@ -44,9 +44,7 @@ const WidgetsDropdown = (props) => {
           title={
             <>
               <span style={{ fontWeight: 'bold' }}>Candidats</span>
-              <div style={{ color: '#ec15bd', fontWeight: 'bold', fontSize: '12px' }}>
-                13 En cours
-              </div>
+              <div style={{ color: 'var(--rose1)', fontSize: '12px' }}>13 En cours</div>
             </>
           }
           action={<img src={candidat} width="30" height="30" />}
@@ -57,7 +55,7 @@ const WidgetsDropdown = (props) => {
           className="my-widget"
           style={{
             backgroundColor: 'white',
-            borderTop: '4px solid #c6a70a',
+            borderTop: '4px solid var(--warning1)',
             paddingBottom: '16px',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
           }}
@@ -65,9 +63,7 @@ const WidgetsDropdown = (props) => {
           title={
             <>
               <span style={{ fontWeight: 'bold' }}>Groupes</span>
-              <div style={{ color: '#c6a70a', fontWeight: 'bold', fontSize: '12px' }}>
-                08 Actifs
-              </div>
+              <div style={{ color: 'var(--warning1)', fontSize: '12px' }}>08 Actifs</div>
             </>
           }
           action={<img src={groupe} width="30" height="30" />}
@@ -78,7 +74,7 @@ const WidgetsDropdown = (props) => {
           className="my-widget"
           style={{
             backgroundColor: 'white',
-            borderTop: '4px solid #007bff',
+            borderTop: '4px solid var(--primary)',
             paddingBottom: '16px',
             boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
           }}
@@ -92,7 +88,7 @@ const WidgetsDropdown = (props) => {
               <span style={{ fontWeight: 'bold' }}>Portefeuil</span>
               <div
                 className="d-flex justify-content-between text-nowrap"
-                style={{ color: '#007bff', fontWeight: 'bold', fontSize: '12px' }}
+                style={{ color: 'var(--primary)', fontSize: '12px' }}
               >
                 <CRow>
                   <CCol xs={7}>

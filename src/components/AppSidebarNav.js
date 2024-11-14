@@ -27,10 +27,10 @@ export const AppSidebarNav = ({ items }) => {
 
     // Styles personnalisés pour NavLink actif et inactif
     const activeStyle = {
-      color: '#4a90e2',
+      color: 'var(--blue1)',
       fontWeight: 'bold',
-      backgroundColor: '#e0f7fa',
-      borderLeft: '4px solid #4a90e2',
+      backgroundColor: 'var(--select1)',
+      borderLeft: '4px solid var(--blue1)',
     }
 
     return (

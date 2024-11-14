@@ -1,3 +1,31 @@
+:root{
+  --blue1 : #5631f1;
+  --blue2: #4f50c8;
+  --blue3: #3529b6;
+  --blue4: #5147c0;
+  --blue5: #425ff4;
+  --violet1: #642ea2;
+  --warning1 : #ffba00;
+  --warning2: #f77f00;
+  --primary: #0284fe;
+  --select2: #e8f1fe;
+  --btnajout: #1631c0;
+  --select1: #f2f0fe;
+  --backcard1: #f4f6fd;
+  --backcard2: #f8f9ff;
+  --backcard3: #f1f2f6;
+  --backcard4: #f4f6fd;
+  --grey: #707070;
+  --grey1: #585757;
+  --rose1: #ff17c8;
+  --rose2 : #fff3fc;
+  --rose3: #ffddf7;
+  --rose4: #fa81b3;
+  --rose5: #643499;
+  --vert1: #00c608;
+  --white1: #ffffff;
+}
+
 html{
   font-size: 85%;
   overflow-x: hidden;

@@ -25,7 +25,7 @@ const Dashboard = () => {
       <CCol xs={12} md={8} xl={8}>
         <WidgetsDropdown className="mb-4" />
         <CCard className="mb-4">
-          <CCardHeader style={{ backgroundColor: '#007bff' }}>
+          <CCardHeader style={{ backgroundColor: 'var(--blue2)' }}>
             <div className="d-flex justify-content-between text-nowrap">
               <div
                 className="fw-semibold"
@@ -41,7 +41,7 @@ const Dashboard = () => {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#57b5f8',
+              backgroundColor: 'var(--blue3)',
             }}
           >
             <RankingItem
@@ -51,7 +51,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="1271"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--violet1)"
               taille="100%"
             />
             <RankingItem
@@ -61,7 +61,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="1171"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="95%"
             />
             <RankingItem
@@ -71,7 +71,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="1050"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="90%"
             />
             <RankingItem
@@ -81,7 +81,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="850"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
             <RankingItem
@@ -91,7 +91,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="630"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
             <RankingItem
@@ -101,7 +101,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
             <RankingItem
@@ -111,7 +111,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
             <RankingItem
@@ -121,7 +121,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
             <RankingItem
@@ -131,7 +131,7 @@ const Dashboard = () => {
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
+              couleur="var(--blue4)"
               taille="100%"
             />
           </CCardBody>

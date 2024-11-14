@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const RankingItem = ({ rank, image, name, time, score, coinIcon, gradient, taille }) => {
+const RankingItem = ({ rank, image, name, time, score, coinIcon, taille, couleur }) => {
   return (
     <div
       className="d-flex align-items-center mb-3"
       style={{
-        background: gradient ? 'linear-gradient(90deg, #6a11cb, #2575fc)' : '#392e5c',
-        padding: '10px',
+        background: couleur,
+        padding: '8px',
         borderRadius: '8px',
         color: 'white',
         width: taille,
@@ -16,8 +16,8 @@ const RankingItem = ({ rank, image, name, time, score, coinIcon, gradient, taill
       {/* Rang */}
       <div
         style={{
-          width: '30px',
-          height: '30px',
+          width: '20px',
+          height: '20px',
           backgroundColor: 'rgba(255, 255, 255, 0.2)',
           borderRadius: '50%',
           display: 'flex',
@@ -32,8 +32,8 @@ const RankingItem = ({ rank, image, name, time, score, coinIcon, gradient, taill
       <div
         className="ms-2 mx-2"
         style={{
-          width: '3px',
-          height: '40px',
+          width: '2px',
+          height: '30px',
           backgroundColor: '#021870',
           display: 'flex',
           alignItems: 'center',
@@ -47,18 +47,18 @@ const RankingItem = ({ rank, image, name, time, score, coinIcon, gradient, taill
         <img
           src={image}
           alt="Profil"
-          style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }}
+          style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '10px' }}
         />
         <div>
-          <div style={{ fontWeight: 'bold' }}>{name}</div>
-          <div style={{ fontSize: '12px', color: '#ddd' }}>{time}</div>
+          <div style={{ fontSize: '11px', fontWeight: 'bold' }}>{name}</div>
+          <div style={{ fontSize: '10px', color: '#ddd' }}>{time}</div>
         </div>
       </div>
 
       {/* Score et Icône */}
       <div className="d-flex align-items-center">
         <span style={{ fontWeight: 'bold', marginRight: '5px' }}>{score}</span>
-        <img src={coinIcon} alt="Coin" style={{ width: '16px', height: '16px' }} />
+        <img src={coinIcon} alt="Coin" style={{ width: '14px', height: '14px' }} />
       </div>
     </div>
   )
@@ -68,6 +68,7 @@ RankingItem.propTypes = {
   rank: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  couleur: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   score: PropTypes.string.isRequired,
   coinIcon: PropTypes.string.isRequired,

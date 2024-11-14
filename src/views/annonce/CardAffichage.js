@@ -10,7 +10,10 @@ const CardAffichage = ({ date, name, localisation, contact, nombre, affiche }) =
     <div>
       <CCard className="mb-4">
         <CCardHeader>
-          <div className="d-flex justify-content-between text-nowrap">
+          <div
+            style={{ color: 'var(--grey)', fontSize: '11px' }}
+            className="d-flex justify-content-between text-nowrap"
+          >
             <div className="fw-semibold">Affichage</div>
             <div className="fw-semibold">{date}</div>
           </div>
@@ -26,7 +29,11 @@ const CardAffichage = ({ date, name, localisation, contact, nombre, affiche }) =
             />
             <div
               className="text-center p-3 pt-4"
-              style={{ backgroundColor: '#cde5fd', borderRadius: '12px' }}
+              style={{
+                backgroundColor: 'var(--backcard4)',
+                borderRadius: '12px',
+                color: 'var(--grey1)',
+              }}
             >
               <div style={{ textAlign: 'initial' }}>
                 Bonjour <strong>{name}</strong> votre visite medicale est prevu pour le{' '}
@@ -38,11 +45,12 @@ const CardAffichage = ({ date, name, localisation, contact, nombre, affiche }) =
           <CCard
             className="mt-5"
             style={{
+              color: 'var(--grey1)',
               boxShadow:
                 'inset 3px 3px 4px 3px rgba(255,255,255,0.3), inset -3px -3px 4px 3px rgba(0,0,0,0.1)',
             }}
           >
-            <CCardHeader style={{ backgroundColor: '#b9dbfd' }}>
+            <CCardHeader style={{ backgroundColor: 'var(--select1)' }}>
               <div className="d-flex justify-content-between text-nowrap">
                 <div className="fw-semibold">Destinataire</div>
                 <div className="fw-semibold">{nombre}</div>

@@ -25,7 +25,11 @@ const CardAffichage2 = ({}) => {
             />
             <div
               className="text-center p-3 pt-4"
-              style={{ backgroundColor: '#cde5fd', borderRadius: '12px' }}
+              style={{
+                backgroundColor: 'var(--backcard4)',
+                borderRadius: '12px',
+                color: 'var(--grey1)',
+              }}
             >
               <div style={{ textAlign: 'center', alignItems: 'center' }}>
                 <div className="text-center">Visite medicale</div>
@@ -42,7 +46,7 @@ const CardAffichage2 = ({}) => {
                 'inset 3px 3px 4px 3px rgba(255,255,255,0.3), inset -3px -3px 4px 3px rgba(0,0,0,0.1)',
             }}
           >
-            <CCardHeader style={{ backgroundColor: '#b9dbfd' }}>
+            <CCardHeader style={{ backgroundColor: 'var(--select1)' }}>
               <div className="d-flex justify-content-between text-nowrap">
                 <div className="fw-semibold">Destinataire</div>
                 <div className="fw-semibold">00</div>

@@ -30,15 +30,15 @@ const Portfeuille = () => {
       montant: '2500',
       status: 'en attente de paiement',
       couleur: 'red',
-      couleur1: 'blue',
-      couleur2: 'blue',
+      couleur1: 'var(--blue5)',
+      couleur2: 'var(--blue5)',
     },
     {
       type: 'AJOUT DE FONDS',
       time: 'Ajouté le 08 Avril 2023 14:10',
       montant: '25.000',
-      couleur1: 'green',
-      couleur2: 'green',
+      couleur1: 'var(--vert1)',
+      couleur2: 'var(--vert1)',
       imgSrc: wave,
       compagnie: 'Wave',
       date: '08/04/2023 14:10',
@@ -50,15 +50,15 @@ const Portfeuille = () => {
       montant: '2500',
       status: 'Payé',
       couleur: 'green',
-      couleur1: 'blue',
-      couleur2: 'blue',
+      couleur1: 'var(--blue5)',
+      couleur2: 'var(--blue5)',
     },
     {
       type: 'AJOUT DE FONDS',
       time: 'Ajouté le 10 Jan 2022 10:10',
       montant: '50.000',
-      couleur1: 'green',
-      couleur2: 'green',
+      couleur1: 'var(--vert1)',
+      couleur2: 'var(--vert1)',
       imgSrc: orange,
       compagnie: 'Orange',
       date: '18/05/2022 18:10',
@@ -67,7 +67,7 @@ const Portfeuille = () => {
   const [activeKey, setActiveKey] = useState('Transactions')
   const [selectedItem, setSelectedItem] = useState(null)
   const activeStyle = {
-    color: '#064dda',
+    color: 'var(--blue5)',
     fontWeight: 'bold',
   }
 
@@ -91,7 +91,7 @@ const Portfeuille = () => {
       <CCol xs={12} md={8} xl={8}>
         <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
           <CCard className="bg-light">
-            <CCardHeader style={{ backgroundColor: '#0077C0', color: '#fff' }}>
+            <CCardHeader style={{ backgroundColor: 'var(--blue5)', color: '#fff' }}>
               <div className="d-flex align-items-center justify-content-between text-nowrap">
                 <div className="mb-4 mt-4">
                   <div>Fond Total</div>
@@ -135,7 +135,7 @@ const Portfeuille = () => {
                 </CTab>
               </CTabList>
             </CCardHeader>
-            <CTabContent>
+            <CTabContent style={{ backgroundColor: 'var(--backcard1)' }}>
               <CTabPanel className="p-3" itemKey="Transactions">
                 {transactionsData.map((transaction, index) => (
                   <CardAbonnement

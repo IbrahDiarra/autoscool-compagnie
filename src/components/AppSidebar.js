@@ -89,7 +89,7 @@ const AppSidebar = () => {
             style={{
               fontSize: '20px',
               fontWeight: 'bold',
-              color: 'rgb(3, 53, 154)',
+              color: 'var(--blue1)',
               fontStyle: 'italic',
               margin: 0,
             }}

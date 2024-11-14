@@ -27,10 +27,10 @@ const PostCard = ({
           <img
             src={profileImage}
             alt="Profil"
-            style={{ width: '40px', height: '40px', borderRadius: '50%', marginRight: '10px' }}
+            style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '8px' }}
           />
           <div>
-            <h6 style={{ margin: '0', fontWeight: 'bold' }}>{title}</h6>
+            <h6 style={{ margin: '0', fontWeight: 'bold', fontSize: '11px' }}>{title}</h6>
             <small>
               {location} • {date}
             </small>

@@ -17,7 +17,7 @@ const CardAbonnement = ({
     <div
       className="d-flex align-items-center mb-3"
       style={{
-        background: isSelected ? '#cce7ff' : '#fff',
+        background: isSelected ? 'var(--select2)' : '#fff',
         padding: '10px',
         borderRadius: '8px',
         boxShadow: 'inset -4px -4px -5px -4px rgba(255,255,255,0.3)',

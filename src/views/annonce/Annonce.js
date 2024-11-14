@@ -19,7 +19,7 @@ import CardCreation from './CardCreation'
 const Annonce = () => {
   const annonceData = [
     {
-      titre: 'Visite medicale',
+      titre: 'Liste visite medicale',
       details: [
         {
           title: 'Visite medicale',
@@ -148,14 +148,14 @@ const Annonce = () => {
   const [activeKey, setActiveKey] = useState('Annonces')
   const [selectedItem, setSelectedItem] = useState(annonceData[0])
   const activeStyle = {
-    color: '#064dda',
+    color: 'var(--blue1)',
     fontWeight: 'bold',
     width: '50%',
-    backgroundColor: '#e0f7fa',
+    backgroundColor: 'var(--select1)',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     width: '50%',
   }
 

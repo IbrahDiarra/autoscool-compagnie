@@ -8,13 +8,15 @@ const CardAnnonceDetail = ({ titre, onClick, isSelected, date, nombre }) => {
       style={{
         padding: '7px',
         borderRadius: '8px',
-        backgroundColor: isSelected ? '#cce7ff' : '#e5e5e6',
+        backgroundColor: isSelected ? 'var(--select1)' : 'var(--backcard1)',
         cursor: 'pointer',
       }}
       onClick={onClick}
     >
       <div className="flex-grow-1">
-        <div style={{ fontWeight: 'bold' }}>{titre}</div>
+        <div style={{ fontWeight: 'bold', color: isSelected ? 'var(--blue1)' : 'var(--grey)' }}>
+          {titre}
+        </div>
         <div style={{ fontSize: '12px' }}>{date}</div>
       </div>
 

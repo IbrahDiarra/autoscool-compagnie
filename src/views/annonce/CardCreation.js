@@ -21,11 +21,14 @@ const CardCreation = ({}) => {
         <CCol xs={12} md={7} xl={7}>
           <CCard className="mb-4">
             <CCardHeader
-              className="text-center bg-light"
+              className="text-center"
               style={{
                 borderRadius: '0px',
                 borderBottomLeftRadius: '20px',
                 borderBottomRightRadius: '20px',
+                backgroundColor: 'var(--white1)',
+                boxShadow:
+                  'inset 3px 3px 4px 3px rgba(255,255,255,0.1), inset -3px -3px 4px 3px rgba(0,0,0,0.1)',
               }}
             >
               <div className="p-3">
