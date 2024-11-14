@@ -36,17 +36,17 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#57b5f8',
+        backgroundColor: 'var(--blue3)',
       }}
     >
-      <CButton color="info" className="mb-2 mt-5" onClick={onClose} style={{ padding: '5px' }}>
+      <CButton className="mb-2 mt-5" onClick={onClose} style={{ padding: '5px' }}>
         <img src={fermer} alt="Close" style={{ width: '20px', height: '20px' }} />
       </CButton>
 
       <CardUserClassement />
       <CardClassement
         rank="1"
-        image={profileImage1}
+        image={profileImage4}
         name="Cissé Idriss"
         time="En 3 jours"
         score="1271"
@@ -61,7 +61,6 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         time="En 3 jours"
         score="1171"
         coinIcon={coinIcon}
-        gradient
         taille="95%"
       />
       <CardClassement
@@ -71,17 +70,15 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         time="En 3 jours"
         score="1050"
         coinIcon={coinIcon}
-        gradient
         taille="90%"
       />
       <CardClassement
         rank="4"
-        image={profileImage4}
-        name="Cissé Idriss"
+        image={profileImage1}
+        name="Michael Kouame"
         time="En 3 jours"
         score="850"
         coinIcon={coinIcon}
-        gradient
         taille="100%"
       />
       <CardClassement
@@ -91,7 +88,6 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         time="En 3 jours"
         score="630"
         coinIcon={coinIcon}
-        gradient
         taille="100%"
       />
       <CardClassement
@@ -101,7 +97,6 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         time="En 3 jours"
         score="450"
         coinIcon={coinIcon}
-        gradient
         taille="100%"
       />
       <CardClassement
@@ -111,7 +106,6 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         time="En 3 jours"
         score="450"
         coinIcon={coinIcon}
-        gradient
         taille="100%"
       />
     </div>
@@ -127,7 +121,10 @@ const ClassementBottom = () => {
 
   return (
     <div className="d-grid" style={{ position: 'relative' }}>
-      <CButton color="info" onClick={() => setIsBottomSheetVisible(true)}>
+      <CButton
+        style={{ backgroundColor: 'var(--blue1)', color: 'white' }}
+        onClick={() => setIsBottomSheetVisible(true)}
+      >
         Classement
       </CButton>
       <BottomSheetPerformence

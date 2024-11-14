@@ -136,7 +136,7 @@ const Classement = () => {
                 </CTab>
               </CTabList>
             </CCardHeader>
-            <CCardBody className="bg-light">
+            <CCardBody style={{ backgroundColor: 'var(--backcard2)' }}>
               <CTabContent>
                 <CTabPanel className="p-3" itemKey="ClassementGroupe">
                   {groupeData.map((groupe, index) => (
@@ -160,7 +160,7 @@ const Classement = () => {
       </CCol>
       <CCol xs={12} md={8} xl={8}>
         <CCard className="mb-4">
-          <CCardHeader style={{ backgroundColor: '#0077C0', color: '#fff' }}>
+          <CCardHeader style={{ backgroundColor: 'var(--blue2)', color: '#fff' }}>
             <div>GROUP A</div>
             <div className="d-flex align-items-center justify-content-center mb-3">
               <div className="d-flex align-items-center">
@@ -176,7 +176,7 @@ const Classement = () => {
                 <div>
                   <div style={{ fontWeight: 'bold', fontSize: '18px' }}>YAO JENNY</div>
                   <div className="text-warning" style={{ fontSize: '18px' }}>
-                    271 Points {''} <span style={{ fontSize: '10px', color: '#fff' }}>N°6</span>
+                    850 Points {''} <span style={{ fontSize: '10px', color: '#fff' }}>N°4</span>
                   </div>
                   <div style={{ fontSize: '10px', fontWeight: 'bold' }}>En 82 heures</div>
                 </div>
@@ -189,13 +189,13 @@ const Classement = () => {
               flexDirection: 'column',
               alignItems: 'center',
               justifyContent: 'center',
-              backgroundColor: '#57b5f8',
+              backgroundColor: 'var(--blue3)',
             }}
           >
             <ClassementCard
               rank="1"
               image={profileImage1}
-              name="Cissé Idriss"
+              name="Michael Kouame"
               time="En 3 jours"
               score="1271"
               coinIcon={coinIcon}
@@ -209,7 +209,6 @@ const Classement = () => {
               time="En 3 jours"
               score="1171"
               coinIcon={coinIcon}
-              gradient
               taille="95%"
             />
             <ClassementCard
@@ -219,17 +218,15 @@ const Classement = () => {
               time="En 3 jours"
               score="1050"
               coinIcon={coinIcon}
-              gradient
               taille="90%"
             />
             <ClassementCard
               rank="4"
               image={profileImage4}
-              name="Cissé Idriss"
+              name="Yao Jenny"
               time="En 3 jours"
               score="850"
               coinIcon={coinIcon}
-              gradient
               taille="100%"
             />
             <ClassementCard
@@ -239,7 +236,6 @@ const Classement = () => {
               time="En 3 jours"
               score="630"
               coinIcon={coinIcon}
-              gradient
               taille="100%"
             />
             <ClassementCard
@@ -249,37 +245,24 @@ const Classement = () => {
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
               taille="100%"
             />
             <ClassementCard
-              rank="6"
+              rank="7"
               image={profileImage6}
               name="Cissé Idriss"
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
               taille="100%"
             />
             <ClassementCard
-              rank="6"
+              rank="8"
               image={profileImage6}
               name="Cissé Idriss"
               time="En 3 jours"
               score="450"
               coinIcon={coinIcon}
-              gradient
-              taille="100%"
-            />
-            <ClassementCard
-              rank="6"
-              image={profileImage6}
-              name="Cissé Idriss"
-              time="En 3 jours"
-              score="450"
-              coinIcon={coinIcon}
-              gradient
               taille="100%"
             />
           </CCardBody>

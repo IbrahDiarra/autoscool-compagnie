@@ -26,7 +26,9 @@ const NiveauComposant = ({}) => {
     <div>
       <CCard className="mb-4">
         <CCardHeader>
-          <div className="text-center fw-semibold">Niveau</div>
+          <div className="text-center fw-semibold" style={{ color: 'var(--grey)' }}>
+            Niveau
+          </div>
         </CCardHeader>
         <CCardBody style={{ height: '70vh' }}>
           <div>

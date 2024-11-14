@@ -4,8 +4,7 @@ import update from 'src/assets/images/imge/Image17.png'
 import effacer from 'src/assets/images/imge/effacer.png'
 import PropTypes from 'prop-types'
 
-import { CCol, CRow, CCard, CCardHeader, CCardBody, CButton } from '@coreui/react'
-import { Colors } from 'chart.js'
+import { CCol, CRow } from '@coreui/react'
 
 const CardMembre = ({ membre }) => {
   return (
@@ -14,7 +13,7 @@ const CardMembre = ({ membre }) => {
       style={{
         padding: '5px',
         borderRadius: '8px',
-        backgroundColor: 'hsl(0, 5%, 88%)',
+        backgroundColor: 'var(--backcard1)',
         cursor: 'pointer',
         width: '100%',
       }}

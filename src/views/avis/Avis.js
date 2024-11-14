@@ -23,17 +23,17 @@ import Evaluation from './Evaluation'
 const Avis = () => {
   const [activeKey, setActiveKey] = useState('Evaluation')
   const activeStyle = {
-    color: '#064dda',
+    color: 'var(--blue1)',
     fontWeight: 'bold',
-    backgroundColor: '#e0f7fa',
+    backgroundColor: 'var(--select1)',
     fontSize: '11px',
     textAlign: 'initial',
     borderRadius: '0px',
-    borderLeft: '3px solid blue',
+    borderLeft: '3px solid var(--blue1)',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     fontSize: '11px',
     textAlign: 'initial',
     borderRadius: '0px',

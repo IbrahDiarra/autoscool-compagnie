@@ -74,14 +74,14 @@ const LesCandidats = () => {
   const [activeKey, setActiveKey] = useState('Encours')
   const [selectedItem, setSelectedItem] = useState(candidatData[0])
   const activeStyle = {
-    color: '#064dda',
+    color: 'var(--blue1)',
     fontWeight: 'bold',
     width: '33.3%',
-    backgroundColor: '#e0f7fa',
+    backgroundColor: 'var(--select1)',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     width: '33.3%',
   }
 

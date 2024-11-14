@@ -30,12 +30,12 @@ const CandidatComposant = ({ nom, candidat }) => {
     color: '#fff',
     fontWeight: 'bold',
     width: '50%',
-    backgroundColor: '#0077C0',
+    backgroundColor: 'var(--blue1)',
     border: '1px solid #ccc',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     width: '50%',
     backgroundColor: '#fff',
     border: '1px solid #ccc',

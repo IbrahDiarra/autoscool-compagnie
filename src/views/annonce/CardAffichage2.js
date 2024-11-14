@@ -9,7 +9,10 @@ const CardAffichage2 = ({}) => {
     <div>
       <CCard className="mb-4">
         <CCardHeader>
-          <div className="d-flex justify-content-between text-nowrap">
+          <div
+            className="d-flex justify-content-between text-nowrap"
+            style={{ color: 'var(--grey)' }}
+          >
             <div className="fw-semibold">Affichage</div>
             <div className="fw-semibold">date</div>
           </div>
@@ -46,7 +49,7 @@ const CardAffichage2 = ({}) => {
                 'inset 3px 3px 4px 3px rgba(255,255,255,0.3), inset -3px -3px 4px 3px rgba(0,0,0,0.1)',
             }}
           >
-            <CCardHeader style={{ backgroundColor: 'var(--select1)' }}>
+            <CCardHeader style={{ backgroundColor: 'var(--select1)', color: 'var(--grey)' }}>
               <div className="d-flex justify-content-between text-nowrap">
                 <div className="fw-semibold">Destinataire</div>
                 <div className="fw-semibold">00</div>
@@ -59,6 +62,7 @@ const CardAffichage2 = ({}) => {
                   padding: '5px',
                   borderRadius: '8px',
                   backgroundColor: '#fff',
+                  color: 'var(--grey)',
                 }}
               >
                 <div className="d-flex align-items-center">

@@ -33,7 +33,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: 'hsl(0, 17%, 94%)',
+        backgroundColor: 'var(--grey3)',
       }}
     >
       <CButton color="light" className="mb-2" onClick={onClose} style={{ padding: '5px' }}>
@@ -45,7 +45,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         niveau="Inscription reussi"
         soustitre="22 JAN 2023 10:15"
         couleur="#949494"
-        backcouleur="#fff"
+        backcouleur="var(--grey2)"
       />
       <CardNiveauSelect
         imgniveau={niveau2}
@@ -53,7 +53,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         niveau="Visite medical reussi"
         soustitre="11 FEV 2024 08:29"
         couleur="#949494"
-        backcouleur="#fff"
+        backcouleur="var(--grey2)"
       />
       <CardNiveauSelect
         imgniveau={niveau3}
@@ -61,7 +61,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         niveau="Examen Blanc"
         soustitre="Code de la route"
         couleur="red"
-        backcouleur="#fea1f0"
+        backcouleur="var(--rose3)"
       />
       <CardNiveauSelect
         imgniveau={niveau4}
@@ -69,7 +69,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         niveau="Examen Blanc"
         soustitre="Conduite"
         couleur="white"
-        backcouleur="hsl(212, 100%, 54%)"
+        backcouleur="var(--primary)"
       />
       <CardNiveauSelect
         imgniveau={niveau5}
@@ -77,7 +77,7 @@ const BottomSheet = ({ isVisible, onClose }) => {
         niveau="Obtention"
         soustitre="Du permis de conduit"
         couleur="white"
-        backcouleur="hsl(156, 94%, 44%)"
+        backcouleur="var(--vert1)"
       />
     </div>
   )

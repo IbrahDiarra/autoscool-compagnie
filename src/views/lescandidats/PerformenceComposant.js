@@ -26,19 +26,19 @@ const CourConduiteComposant = ({}) => {
     color: '#fff',
     fontWeight: 'bold',
     width: '50%',
-    backgroundColor: '#0077C0',
+    backgroundColor: 'var(--blue1)',
     border: '1px solid #ccc',
-    fontSize: '10px',
+    fontSize: '9px',
     borderBottomLeftRadius: '8px',
     borderBottomRightRadius: '8px',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     width: '50%',
     backgroundColor: '#fff',
     border: '1px solid #ccc',
-    fontSize: '10px',
+    fontSize: '9px',
     borderBottomLeftRadius: '8px',
     borderBottomRightRadius: '8px',
   }
@@ -50,7 +50,9 @@ const CourConduiteComposant = ({}) => {
     <div>
       <CCard className="mb-4">
         <CCardHeader>
-          <div className="text-center fw-semibold m-1">Performence</div>
+          <div className="text-center fw-semibold m-1" style={{ color: 'var(--grey)' }}>
+            Performence
+          </div>
         </CCardHeader>
         <CCardBody style={{ height: '70vh' }}>
           <CTabs activeItemKey={activeKey} onTabChange={handleTabChange}>

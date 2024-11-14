@@ -10,7 +10,7 @@ const CardNiveauSelect = ({ imgniveau, imgcorrect, niveau, soustitre, couleur, b
         padding: '5px',
         borderRadius: '8px',
         backgroundColor: backcouleur,
-        borderRadius: '8px',
+        borderRadius: '6px',
         width: '100%',
         cursor: 'pointer',
       }}

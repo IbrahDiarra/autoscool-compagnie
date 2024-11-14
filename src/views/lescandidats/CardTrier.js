@@ -97,7 +97,7 @@ const CardTrier = ({}) => {
         </CRow>
 
         <div className="d-grid mt-5">
-          <CButton color="info">Rechercher</CButton>
+          <CButton style={{ backgroundColor: 'var(--blue1)', color: '#fff' }}>Rechercher</CButton>
         </div>
       </CForm>
     </div>

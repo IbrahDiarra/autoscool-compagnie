@@ -14,10 +14,15 @@ const CardAnnonceDetail = ({ titre, onClick, isSelected, date, nombre }) => {
       onClick={onClick}
     >
       <div className="flex-grow-1">
-        <div style={{ fontWeight: 'bold', color: isSelected ? 'var(--blue1)' : 'var(--grey)' }}>
+        <div
+          style={{
+            fontWeight: isSelected ? 'bold' : 'normal',
+            color: isSelected ? 'var(--blue1)' : 'var(--grey)',
+          }}
+        >
           {titre}
         </div>
-        <div style={{ fontSize: '12px' }}>{date}</div>
+        <div style={{ fontSize: '10px' }}>{date}</div>
       </div>
 
       <div className="d-flex align-items-center">

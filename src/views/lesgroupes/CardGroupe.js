@@ -9,7 +9,7 @@ const CardGroupe = ({ groupe, nombre, date, onClick, isSelected }) => {
       style={{
         padding: '5px',
         borderRadius: '8px',
-        backgroundColor: isSelected ? '#cce7ff' : '#fff',
+        backgroundColor: isSelected ? 'var(--select1)' : '#fff',
         cursor: 'pointer',
       }}
       onClick={onClick}
@@ -27,7 +27,16 @@ const CardGroupe = ({ groupe, nombre, date, onClick, isSelected }) => {
       </div>
 
       <div className="d-flex align-items-center  flex-column">
-        <spam style={{ fontWeight: 'bold', fontSize: '13px', marginRight: '5px' }}>{nombre}</spam>
+        <spam
+          style={{
+            fontWeight: 'bold',
+            fontSize: '13px',
+            marginRight: '5px',
+            color: 'var(--violet1)',
+          }}
+        >
+          {nombre}
+        </spam>
       </div>
     </div>
   )

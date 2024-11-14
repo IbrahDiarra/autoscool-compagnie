@@ -6,7 +6,7 @@ const ClassementCard = ({ rank, image, name, time, score, coinIcon, gradient, ta
     <div
       className="d-flex align-items-center mb-3"
       style={{
-        background: gradient ? 'linear-gradient(90deg, #6a11cb, #2575fc)' : '#392e5c',
+        background: gradient ? 'var(--violet1)' : 'var(--blue4)',
         padding: '8px',
         borderRadius: '8px',
         color: 'white',

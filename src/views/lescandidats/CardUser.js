@@ -10,8 +10,9 @@ const CardUser = ({ nom, onClick, isSelected }) => {
       style={{
         padding: '5px',
         borderRadius: '8px',
-        backgroundColor: isSelected ? '#cce7ff' : '#fff',
+        backgroundColor: isSelected ? 'var(--select2)' : '#fff',
         cursor: 'pointer',
+        color: 'var(--grey)',
       }}
       onClick={onClick}
     >
