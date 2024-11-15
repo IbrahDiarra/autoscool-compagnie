@@ -80,7 +80,7 @@ const ModalAjoutFond = () => {
         <img src={plus} alt="Ajouter un logo" width="15" height="15" className="me-2" />
         Ajouter des fonds
       </CButton>
-      <CModal size="lg" visible={visible} onClose={() => setVisible(false)}>
+      <CModal size="lg" className="mt-5" visible={visible} onClose={() => setVisible(false)}>
         <CModalHeader>
           <CModalTitle>{step === 1 ? 'Ajout des fonds' : 'Confirmation'}</CModalTitle>
         </CModalHeader>

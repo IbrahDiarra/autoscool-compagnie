@@ -25,7 +25,6 @@ const BottomSheetPerformence = ({ isVisible, onClose }) => {
         bottom: '32px',
         left: '0',
         right: '0',
-        backgroundColor: '#fff',
         border: '1px solid #ccc',
         borderTopLeftRadius: '8px',
         borderTopRightRadius: '8px',
