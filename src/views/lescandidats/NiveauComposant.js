@@ -24,13 +24,13 @@ const NiveauComposant = ({}) => {
   ]
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader>
           <div className="text-center fw-semibold" style={{ color: 'var(--grey)' }}>
             Niveau
           </div>
         </CCardHeader>
-        <CCardBody style={{ height: '70vh' }}>
+        <CCardBody>
           <div>
             <div>
               {userNiveau.map((item, index) => (

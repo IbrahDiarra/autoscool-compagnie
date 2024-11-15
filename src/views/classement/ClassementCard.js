@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const ClassementCard = ({ rank, image, name, time, score, coinIcon, gradient, taille }) => {
   return (
     <div
-      className="d-flex align-items-center mb-3"
+      className="d-flex align-items-center mb-2"
       style={{
         background: gradient ? 'var(--violet1)' : 'var(--blue4)',
         padding: '8px',

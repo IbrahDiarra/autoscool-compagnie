@@ -19,6 +19,9 @@ import {
 import CIcon from '@coreui/icons-react'
 import { cilStar } from '@coreui/icons'
 import Evaluation from './Evaluation'
+import CardAvis from './CardAvis'
+import EvaluationAvis from './EvaluationAvis'
+import Partage from './Partage'
 
 const Avis = () => {
   const [activeKey, setActiveKey] = useState('Evaluation')
@@ -46,7 +49,7 @@ const Avis = () => {
     <CRow>
       <CCol xs={12} md={4} xl={4}>
         <CCard className="mb-4">
-          <CCardBody>
+          <CCardBody style={{ height: '85vh' }}>
             <div>
               <div>
                 <img
@@ -98,9 +101,9 @@ const Avis = () => {
                   </div>
                 </CTab>
                 <CTab
-                  itemKey="General"
-                  style={activeKey === 'General' ? activeStyle : inactiveStyle}
-                  onClick={() => handleTabChange('General')}
+                  itemKey="Partage"
+                  style={activeKey === 'Partage' ? activeStyle : inactiveStyle}
+                  onClick={() => handleTabChange('Partage')}
                 >
                   <div className="d-flex justify-content-between">
                     <div>
@@ -120,8 +123,8 @@ const Avis = () => {
       </CCol>
       <CCol xs={12} md={8} xl={8}>
         <CCard className="mb-4">
-          <CCardBody>
-            <Evaluation />
+          <CCardBody style={{ height: '85vh' }}>
+            {activeKey === 'Evaluation' ? <EvaluationAvis /> : <Partage />}
           </CCardBody>
         </CCard>
       </CCol>

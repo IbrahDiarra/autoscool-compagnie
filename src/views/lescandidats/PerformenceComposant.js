@@ -48,13 +48,13 @@ const CourConduiteComposant = ({}) => {
   }
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader>
           <div className="text-center fw-semibold m-1" style={{ color: 'var(--grey)' }}>
             Performence
           </div>
         </CCardHeader>
-        <CCardBody style={{ height: '70vh' }}>
+        <CCardBody>
           <CTabs activeItemKey={activeKey} onTabChange={handleTabChange}>
             <CTabList
               variant="tabs"

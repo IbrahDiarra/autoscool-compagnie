@@ -6,7 +6,7 @@ import { CCard, CCardBody, CCardHeader, CButton } from '@coreui/react'
 const CardDetails = ({}) => {
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader className="pt-3 pb-3">
           <div className="d-flex justify-content-between text-nowrap">
             <div className="fw-semibold">Détails de transaction</div>

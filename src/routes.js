@@ -8,6 +8,7 @@ const LesCandidats = React.lazy(() => import('./views/lescandidats/LesCandidat')
 const Classement = React.lazy(() => import('./views/classement/Classement'))
 const LesGroupes = React.lazy(() => import('./views/lesgroupes/LesGroupes'))
 const Compte = React.lazy(() => import('./views/compte/Compte'))
+const AjoutCandidat = React.lazy(() => import('./views/ajoutcandidat/AjoutCandidat'))
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -19,6 +20,7 @@ const routes = [
   { path: '/classement', name: 'Classement', element: Classement },
   { path: '/lesgroupes', name: 'Les Groupes', element: LesGroupes },
   { path: '/compte', name: 'Compte', element: Compte },
+  { path: '/ajoutcandidat', name: 'Ajouter un candidat', element: AjoutCandidat },
 ]
 
 export default routes

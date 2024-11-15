@@ -66,7 +66,7 @@ const LesGroupes = () => {
   return (
     <CRow>
       <CCol xs={12} md={4} xl={4}>
-        <CCard className="mb-4">
+        <CCard className="mb-4" style={{ height: '85vh' }}>
           <CCardHeader className="pt-3 pb-3">
             <div className="d-flex align-items-center justify-content-between">
               <div className="fw-semibold">LES GROUPES</div>
@@ -90,7 +90,7 @@ const LesGroupes = () => {
         </CCard>
       </CCol>
       <CCol xs={12} md={8} xl={8}>
-        <CCard className="mb-4">
+        <CCard className="mb-4" style={{ height: '85vh' }}>
           <CCardHeader className="pt-3 pb-3">
             <div className="d-flex align-items-center justify-content-between">
               <div className="fw-semibold">Membres</div>

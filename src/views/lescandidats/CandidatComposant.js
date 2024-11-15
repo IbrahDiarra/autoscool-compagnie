@@ -49,7 +49,7 @@ const CandidatComposant = ({ nom, candidat }) => {
       <CRow>
         {/* userinfo */}
         <CCol xs={12} md={7} xl={7}>
-          <CCard className="mb-4 bg-light">
+          <CCard className="mb-4 bg-light" style={{ height: '85vh' }}>
             <CCardHeader
               className="text-center"
               style={{

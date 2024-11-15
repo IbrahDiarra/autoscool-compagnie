@@ -7,7 +7,7 @@ import profil from 'src/assets/images/img/profile3.png'
 const CardAffichage2 = ({}) => {
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader>
           <div
             className="d-flex justify-content-between text-nowrap"

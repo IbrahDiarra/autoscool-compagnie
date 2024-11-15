@@ -173,7 +173,7 @@ const Annonce = () => {
     <CRow>
       <CCol xs={12} md={3} xl={3}>
         <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
-          <CCard style={{ backgroundColor: '#fff', borderTop: 'none' }}>
+          <CCard style={{ backgroundColor: '#fff', borderTop: 'none', height: '85vh' }}>
             <CCardHeader style={{ backgroundColor: '#fff', borderTop: 'none' }}>
               <CTabList
                 variant="tabs"

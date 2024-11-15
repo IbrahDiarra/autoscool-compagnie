@@ -7,7 +7,7 @@ import { CCard, CCardBody, CCardHeader, CButton } from '@coreui/react'
 const DetailsAbonnement = ({ name, time, montant, status, couleur }) => {
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader className="pt-3 pb-3">
           <div className="d-flex justify-content-between text-nowrap">
             <div className="fw-semibold">Détails de transaction</div>
@@ -57,21 +57,13 @@ const DetailsAbonnement = ({ name, time, montant, status, couleur }) => {
                 <div>Date et heure</div>
                 <div>{time}</div>
               </div>
-              <div className="mb-4">
+              <div>
                 <div>References</div>
                 <div>THDKK2561DJJM</div>
               </div>
             </CCardBody>
           </CCard>
-          <div
-            className="d-grid mt-5"
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
+          <div className="d-grid mt-3 me-5 ms-5">
             <CButton color="primary">Payer</CButton>
           </div>
         </CCardBody>

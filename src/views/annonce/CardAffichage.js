@@ -8,7 +8,7 @@ import CardAffichageDetail from './CardAffichageDetail'
 const CardAffichage = ({ date, name, localisation, contact, nombre, affiche }) => {
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader>
           <div
             style={{ color: 'var(--grey)', fontSize: '11px' }}

@@ -26,7 +26,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Ajouter un candidat',
-    to: '/theme/typography',
+    to: '/ajoutcandidat',
     icon: <CIcon icon={cilUserFollow} customClassName="nav-icon" size="xl" />,
   },
   {

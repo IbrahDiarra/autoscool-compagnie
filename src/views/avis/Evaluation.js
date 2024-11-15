@@ -45,7 +45,7 @@ const Evaluation = ({}) => {
                 width: '8rem',
                 height: '7.5rem',
                 boxShadow: '-5px -4px 10px #fff',
-                backgroundColor: '#f0f0f0',
+                backgroundColor: 'var(--backcard1)',
                 borderRadius: '8px',
               }}
             >

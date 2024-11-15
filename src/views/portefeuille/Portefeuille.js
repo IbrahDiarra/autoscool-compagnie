@@ -90,7 +90,7 @@ const Portfeuille = () => {
     <CRow>
       <CCol xs={12} md={8} xl={8}>
         <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
-          <CCard className="bg-light">
+          <CCard className="bg-light" style={{ height: '85vh' }}>
             <CCardHeader style={{ backgroundColor: 'var(--blue5)', color: '#fff' }}>
               <div className="d-flex align-items-center justify-content-between text-nowrap">
                 <div className="mb-4 mt-4">
@@ -135,7 +135,7 @@ const Portfeuille = () => {
                 </CTab>
               </CTabList>
             </CCardHeader>
-            <CTabContent style={{ backgroundColor: 'var(--backcard1)' }}>
+            <CTabContent>
               <CTabPanel className="p-3" itemKey="Transactions">
                 {transactionsData.map((transaction, index) => (
                   <CardAbonnement

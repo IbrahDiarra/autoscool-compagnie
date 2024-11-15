@@ -8,7 +8,7 @@ import { CCard, CCardBody, CCardHeader, CButton } from '@coreui/react'
 const DetailsAjoutFond = ({ compagnie, date, montant, status, image }) => {
   return (
     <div>
-      <CCard className="mb-4">
+      <CCard className="mb-4" style={{ height: '85vh' }}>
         <CCardHeader className="pt-3 pb-3">
           <div className="d-flex justify-content-between text-nowrap">
             <div className="fw-semibold">Détails de transaction</div>
@@ -42,13 +42,13 @@ const DetailsAjoutFond = ({ compagnie, date, montant, status, image }) => {
             </CCardHeader>
             <CCardBody>
               <div className="text-center text-warning">{compagnie}</div>
-              <div className="mb-4">
-                <div>Status</div>
+              <div className="mb-2">
+                <strong>Status</strong>
                 <div>Effectué</div>
               </div>
-              <div className="mb-4 d-flex justify-content-between">
+              <div className="mb-2 d-flex justify-content-between">
                 <div>
-                  <div>Compagnie</div>
+                  <strong>Compagnie</strong>
                   <div>{compagnie}</div>
                 </div>
                 <div>
@@ -62,20 +62,20 @@ const DetailsAjoutFond = ({ compagnie, date, montant, status, image }) => {
                   />
                 </div>
               </div>
-              <div className="mb-4">
-                <div>Montant</div>
+              <div className="mb-2">
+                <strong>Montant</strong>
                 <div>{montant} FR</div>
               </div>
-              <div className="mb-4">
-                <div>Solde après transaction</div>
+              <div className="mb-2">
+                <strong>Solde après transaction</strong>
                 <div>50.000 FR</div>
               </div>
-              <div className="mb-4">
-                <div>Date et heure</div>
+              <div className="mb-2">
+                <strong>Date et heure</strong>
                 <div>{date}</div>
               </div>
-              <div className="mb-4">
-                <div>References</div>
+              <div>
+                <strong>References</strong>
                 <div>THDKK2561DJJM</div>
               </div>
             </CCardBody>

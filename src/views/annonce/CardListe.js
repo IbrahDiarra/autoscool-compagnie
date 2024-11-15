@@ -20,7 +20,7 @@ const CardListe = ({ titre, details }) => {
     <div>
       <CRow>
         <CCol xs={12} md={7} xl={7}>
-          <CCard className="mb-4">
+          <CCard className="mb-4" style={{ height: '85vh' }}>
             <CCardHeader>
               <div className="d-flex justify-content-between text-nowrap">
                 <div

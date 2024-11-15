@@ -1,0 +1,24 @@
+.bottom-sheet-animation {
+  overflow-y: auto;
+  scrollbar-width: thin; /* Change la largeur de la barre de défilement */
+  scrollbar-color: var(--blue4) var(--blue3); /* Change la couleur de la barre de défilement et son fond */
+}
+
+
+/* Pour les navigateurs basés sur Webkit (comme Chrome, Safari, Edge) */
+.bottom-sheet-animation::-webkit-scrollbar {
+  width: 4px; /* Largeur de la barre de défilement */
+}
+
+.bottom-sheet-animation::-webkit-scrollbar-track {
+  background: var(--blue3); /* Couleur de fond du track (zone de défilement) */
+}
+
+.bottom-sheet-animation::-webkit-scrollbar-thumb {
+  background-color: var(--blue4); /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis de la barre */
+}
+
+.bottom-sheet-animation::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue4); /* Couleur lorsque la barre est survolée */
+}

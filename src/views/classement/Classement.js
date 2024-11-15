@@ -7,6 +7,7 @@ import profileImage3 from 'src/assets/images/img/profile3.png'
 import profileImage4 from 'src/assets/images/img/profile4.png'
 import profileImage5 from 'src/assets/images/img/profile5.png'
 import profileImage6 from 'src/assets/images/img/profile6.png'
+import './Classement.css'
 
 import {
   CCol,
@@ -79,15 +80,15 @@ const Classement = () => {
   const [activeKey, setActiveKey] = useState('ClassementGroupe')
   const [selectedItem, setSelectedItem] = useState(groupeData[0])
   const activeStyle = {
-    color: '#064dda',
+    color: 'var(--blue1)',
     fontWeight: 'bold',
     width: '50%',
-    backgroundColor: '#e0f7fa',
+    backgroundColor: 'var(--select1)',
     fontSize: '11px',
   }
 
   const inactiveStyle = {
-    color: '#1f1f20',
+    color: 'var(--grey)',
     width: '50%',
     fontSize: '11px',
   }
@@ -106,7 +107,7 @@ const Classement = () => {
     <CRow>
       <CCol xs={12} md={4} xl={4}>
         <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
-          <CCard style={{ backgroundColor: '#fff', borderTop: 'none' }}>
+          <CCard style={{ backgroundColor: '#fff', borderTop: 'none', height: '85vh' }}>
             <CCardHeader style={{ backgroundColor: '#fff', borderTop: 'none' }}>
               <CTabList
                 variant="tabs"
@@ -159,7 +160,7 @@ const Classement = () => {
         </CTabs>
       </CCol>
       <CCol xs={12} md={8} xl={8}>
-        <CCard className="mb-4">
+        <CCard className="mb-4" style={{ height: '85vh', backgroundColor: 'var(--blue3)' }}>
           <CCardHeader style={{ backgroundColor: 'var(--blue2)', color: '#fff' }}>
             <div>GROUP A</div>
             <div className="d-flex align-items-center justify-content-center mb-3">
@@ -184,6 +185,7 @@ const Classement = () => {
             </div>
           </CCardHeader>
           <CCardBody
+            className="bottom-sheet-animation"
             style={{
               display: 'flex',
               flexDirection: 'column',
@@ -192,6 +194,8 @@ const Classement = () => {
               backgroundColor: 'var(--blue3)',
             }}
           >
+            <div className="mt-5 pt-5"></div>
+            <div className="mt-5"></div>
             <ClassementCard
               rank="1"
               image={profileImage1}

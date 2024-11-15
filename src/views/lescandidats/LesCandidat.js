@@ -99,7 +99,7 @@ const LesCandidats = () => {
     <CRow>
       <CCol xs={12} md={4} xl={4}>
         <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
-          <CCard style={{ backgroundColor: '#fff', borderTop: 'none' }}>
+          <CCard style={{ backgroundColor: '#fff', borderTop: 'none', height: '85vh' }}>
             <CCardHeader style={{ backgroundColor: '#fff', borderTop: 'none' }}>
               <CTabList
                 variant="tabs"
