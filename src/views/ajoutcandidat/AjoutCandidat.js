@@ -33,12 +33,12 @@ const AjoutCandidat = () => {
     <div className="min-vh-100 d-flex flex-row align-items-center">
       <CContainer>
         <CRow className="justify-content-center">
-          <CCol md={9} lg={7} xl={6}>
-            <CCard className="mx-auto mb-3" style={{ maxWidth: '600px' }}>
+          <CCol md={11} lg={9} xl={8}>
+            <CCard className="mx-auto mb-3">
               <CCardBody className="p-4">
                 <CForm>
                   <CTabs activeItemKey="home">
-                    <CCard style={{ height: '85vh' }}>
+                    <CCard style={{ height: '83vh' }}>
                       <CCardHeader>
                         <CTabList
                           variant="pills"

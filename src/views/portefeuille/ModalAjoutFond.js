@@ -81,7 +81,7 @@ const ModalAjoutFond = () => {
         Ajouter des fonds
       </CButton>
       <CModal size="lg" className="mt-5" visible={visible} onClose={() => setVisible(false)}>
-        <CModalHeader>
+        <CModalHeader className="text-primary" style={{ fontWeight: 'bold' }}>
           <CModalTitle>{step === 1 ? 'Ajout des fonds' : 'Confirmation'}</CModalTitle>
         </CModalHeader>
         <CModalBody>
@@ -127,7 +127,7 @@ const ModalAjoutFond = () => {
                     <CInputGroup className="mb-3">
                       <CFormInput
                         type="number"
-                        placeholder="entrez le montant"
+                        placeholder="Entrez le montant"
                         min={0}
                         value={montant}
                         onChange={(e) => setMontant(e.target.value)}

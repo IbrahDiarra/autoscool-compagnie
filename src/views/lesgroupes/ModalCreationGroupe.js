@@ -22,13 +22,13 @@ const ModalCreationGroupe = ({}) => {
       <CButton variant="outline" color="secondary" onClick={() => setVisible(!visible)}>
         Créer un groupe
       </CButton>
-      <CModal visible={visible} onClose={() => setVisible(false)}>
+      <CModal className="m-5" visible={visible} onClose={() => setVisible(false)}>
         <CModalHeader>
           <CModalTitle className="text-primary" style={{ fontWeight: 'bold' }}>
             Créer un groupe
           </CModalTitle>
         </CModalHeader>
-        <CModalBody>
+        <CModalBody className="p-5">
           <CForm>
             <CRow className="mb-3">
               <CCol>
