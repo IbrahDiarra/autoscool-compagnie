@@ -37,7 +37,9 @@ const ModalAjoutAssistant = () => {
       </CButton>
       <CModal visible={visible} onClose={() => setVisible(false)}>
         <CModalHeader>
-          <CModalTitle>Ajouter un assistant</CModalTitle>
+          <CModalTitle className="text-primary" style={{ fontWeight: 'bold' }}>
+            Ajouter un assistant
+          </CModalTitle>
         </CModalHeader>
         <CModalBody className="ps-5 pe-5">
           <CForm>

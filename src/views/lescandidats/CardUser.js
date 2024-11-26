@@ -3,7 +3,7 @@ import profil from 'src/assets/images/imge/Image2.png'
 import Image17 from 'src/assets/images/imge/Image17.png'
 import PropTypes from 'prop-types'
 
-const CardUser = ({ nom, onClick, isSelected }) => {
+const CardUser = ({ nom, prenom, onClick, isSelected }) => {
   return (
     <div
       className="d-flex align-items-center justify-content-between mb-3"
@@ -13,6 +13,7 @@ const CardUser = ({ nom, onClick, isSelected }) => {
         backgroundColor: isSelected ? 'var(--select2)' : '#fff',
         cursor: 'pointer',
         color: 'var(--grey)',
+        borderBottom: '1.5px solid var(--grey)',
       }}
       onClick={onClick}
     >
@@ -23,8 +24,10 @@ const CardUser = ({ nom, onClick, isSelected }) => {
           style={{ width: '30px', height: '30px', borderRadius: '50%', marginRight: '5px' }}
         />
         <div>
-          <div style={{ fontWeight: 'bold', fontSize: '10px' }}>{nom}</div>
-          <div style={{ fontSize: '8px' }}>Visite medicale reussi</div>
+          <div style={{ fontWeight: 'bold', fontSize: '11px' }}>
+            {nom} {prenom}
+          </div>
+          <div style={{ fontSize: '10px' }}>Visite medicale reussi</div>
         </div>
       </div>
 
@@ -38,6 +41,7 @@ const CardUser = ({ nom, onClick, isSelected }) => {
 
 CardUser.propTypes = {
   nom: PropTypes.string.isRequired,
+  prenom: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   isSelected: PropTypes.bool.isRequired,
 }

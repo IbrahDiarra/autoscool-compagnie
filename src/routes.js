@@ -12,7 +12,7 @@ const AjoutCandidat = React.lazy(() => import('./views/ajoutcandidat/AjoutCandid
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Acceuil', element: Dashboard },
+  { path: '/dashboard', name: 'Accueil', element: Dashboard },
   { path: '/portefeuille', name: 'Portefeuille', element: Portefeuille },
   { path: '/annonce', name: 'Annonce', element: Annonce },
   { path: '/avis', name: 'Avis Candidat', element: Avis },

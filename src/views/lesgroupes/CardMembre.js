@@ -16,6 +16,7 @@ const CardMembre = ({ membre }) => {
         backgroundColor: 'var(--backcard1)',
         cursor: 'pointer',
         width: '100%',
+        borderBottom: '1.5px solid var(--grey)',
       }}
     >
       <div className="d-flex align-items-center justify-content-between">

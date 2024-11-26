@@ -19,15 +19,9 @@ import { CNavItem } from '@coreui/react'
 const _nav = [
   {
     component: CNavItem,
-    name: 'Acceuil',
+    name: 'Accueil',
     to: '/dashboard',
     icon: <CIcon icon={cilHome} customClassName="nav-icon" size="xl" />,
-  },
-  {
-    component: CNavItem,
-    name: 'Ajouter un candidat',
-    to: '/ajoutcandidat',
-    icon: <CIcon icon={cilUserFollow} customClassName="nav-icon" size="xl" />,
   },
   {
     component: CNavItem,

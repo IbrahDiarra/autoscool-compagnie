@@ -9,8 +9,9 @@ const CardGroupe = ({ groupe, nombre, date, onClick, isSelected }) => {
       style={{
         padding: '5px',
         borderRadius: '8px',
-        backgroundColor: isSelected ? 'var(--select1)' : '#fff',
+        backgroundColor: isSelected ? 'var(--select1)' : 'var(--backcard1)',
         cursor: 'pointer',
+        borderBottom: '1.5px solid var(--grey)',
       }}
       onClick={onClick}
     >

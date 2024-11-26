@@ -15,6 +15,7 @@ import {
 import CandidatComposant from './CandidatComposant'
 import CardUser from './CardUser'
 import CardTrier from './CardTrier'
+import ModalAjouCandidat from './ModalAjouCandidat'
 
 const LesCandidats = () => {
   const candidatData = [
@@ -98,19 +99,26 @@ const LesCandidats = () => {
   return (
     <CRow>
       <CCol xs={12} md={4} xl={4}>
-        <CTabs activeItemKey={activeKey} onTabChange={handleTabChange} className="mb-4">
-          <CCard style={{ backgroundColor: '#fff', borderTop: 'none', height: '85vh' }}>
-            <CCardHeader style={{ backgroundColor: '#fff', borderTop: 'none' }}>
+        <CCard className="mb-4" style={{ height: '85vh' }}>
+          <CCardHeader className="pt-3 pb-3">
+            <div className="d-flex align-items-center justify-content-between">
+              <div className="fw-semibold">Candidats</div>
+              <div className="ms-3">
+                <ModalAjouCandidat />
+              </div>
+            </div>
+          </CCardHeader>
+          <CCardBody className="bg-light">
+            <CTabs activeItemKey={activeKey} onTabChange={handleTabChange}>
               <CTabList
                 variant="tabs"
                 className="d-flex align-items-center justify-content-start"
                 style={{
                   fontWeight: 'bold',
-                  borderBottom: '2px solid #ccc',
                   marginBottom: '-7px',
                   marginLeft: '-14px',
                   marginRight: '-14px',
-                  marginTop: '-7px',
+                  marginTop: '-14px',
                 }}
               >
                 <CTab
@@ -135,9 +143,7 @@ const LesCandidats = () => {
                   Trier
                 </CTab>
               </CTabList>
-            </CCardHeader>
-            <CCardBody className="bg-light">
-              <CTabContent>
+              <CTabContent className="mt-3">
                 <CTabPanel className="p-3" itemKey="Encours">
                   {candidatData
                     .filter((item) => item.status === 'En cours')
@@ -145,6 +151,7 @@ const LesCandidats = () => {
                       <CardUser
                         key={index}
                         nom={user.nom}
+                        prenom={user.info.prenom}
                         onClick={() => handleItemClick(user)}
                         isSelected={isSelected(user)}
                       />
@@ -157,6 +164,7 @@ const LesCandidats = () => {
                       <CardUser
                         key={index}
                         nom={user.nom}
+                        prenom={user.info.prenom}
                         onClick={() => handleItemClick(user)}
                         isSelected={isSelected(user)}
                       />
@@ -166,9 +174,9 @@ const LesCandidats = () => {
                   <CardTrier />
                 </CTabPanel>
               </CTabContent>
-            </CCardBody>
-          </CCard>
-        </CTabs>
+            </CTabs>
+          </CCardBody>
+        </CCard>
       </CCol>
       <CCol xs={12} md={8} xl={8}>
         <CandidatComposant nom={selectedItem.nom} candidat={selectedItem.info} />

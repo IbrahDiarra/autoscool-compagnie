@@ -15,7 +15,7 @@ const CardTrier = ({}) => {
   return (
     <div>
       <CForm>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <CInputGroup>
               <CFormSelect>
@@ -26,7 +26,7 @@ const CardTrier = ({}) => {
             </CInputGroup>
           </CCol>
         </CRow>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <CInputGroup>
               <CFormSelect>
@@ -37,7 +37,7 @@ const CardTrier = ({}) => {
             </CInputGroup>
           </CCol>
         </CRow>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <CInputGroup>
               <CFormSelect>
@@ -48,7 +48,7 @@ const CardTrier = ({}) => {
             </CInputGroup>
           </CCol>
         </CRow>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <CInputGroup>
               <CFormSelect>
@@ -59,7 +59,7 @@ const CardTrier = ({}) => {
             </CInputGroup>
           </CCol>
         </CRow>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <CInputGroup>
               <CFormSelect>
@@ -72,12 +72,12 @@ const CardTrier = ({}) => {
         </CRow>
         <CRow>
           <CCol>
-            <CInputGroup className="mb-3">
+            <CInputGroup className="mb-2">
               <CFormInput placeholder="Date Inscription" type="date" />
             </CInputGroup>
           </CCol>
         </CRow>
-        <CRow className="mb-3">
+        <CRow className="mb-2">
           <CCol>
             <div
               className="d-flex align-items-center"
@@ -96,7 +96,7 @@ const CardTrier = ({}) => {
           </CCol>
         </CRow>
 
-        <div className="d-grid mt-5">
+        <div className="d-grid mt-4">
           <CButton style={{ backgroundColor: 'var(--blue1)', color: '#fff' }}>Rechercher</CButton>
         </div>
       </CForm>

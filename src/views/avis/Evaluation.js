@@ -8,11 +8,11 @@ const StarRatingRow = ({ rating, value, count }) => (
   <CRow className="d-flex align-items-center">
     <CCol md={3} xl={3}>
       <span className="me-3">{rating}</span>
-      <img className="me-3" src={star} alt="star" style={{ width: '14px', height: '14px' }} />
+      <img className="me-3" src={star} alt="star" style={{ width: '12px', height: '12px' }} />
       <span>({count})</span>
     </CCol>
     <CCol md={9} xl={9}>
-      <CProgress height={10}>
+      <CProgress height={6}>
         <CProgressBar color="warning" value={value} />
       </CProgress>
     </CCol>
